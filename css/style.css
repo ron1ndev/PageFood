@@ -177,7 +177,33 @@ body._lock {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+.swiper-button-next{
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease;
+  border-radius:16px;
+  background: rgba(44, 44, 44, 0.6);
+  color:#cccccc;
+}
 
+.swiper-button-next:hover{
+  background: rgba(255, 255, 255, 0.8);
+  color:#000000;
+}
+
+.swiper-button-prev{
+  width: 60px;
+  height: 60px;
+  transition: all 0.3s ease;
+  border-radius:16px;
+  background: rgba(44, 44, 44, 0.6);
+  color:#cccccc;
+}
+
+.swiper-button-prev:hover{
+  background: rgba(255, 255, 255, 0.8);
+  color:#000000;
+}
 .select__value span {
   height: 1em;
   overflow: hidden;
@@ -932,7 +958,7 @@ body.ie ._ibg img {
 }
 
 .popup__item:hover:before {
-  width: 100%;
+  width: 50%;
 }
 
 .item-popup__img {

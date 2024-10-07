@@ -864,6 +864,7 @@ body.ie ._ibg img {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+          border-radius:8px;
 }
 
 .popup__content {
@@ -978,7 +979,7 @@ body.ie ._ibg img {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+  border-radius: 16px;
 }
 
 .item-popup__info {
@@ -1240,7 +1241,7 @@ body.ie ._ibg img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -1558,23 +1559,26 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-between;
 }
 
 .pop__column {
   border: 1px solid #cacaca;
+  flex:0 1 300px;
+  border-radius:16px;
+  overflow: hidden;
 }
 
 .pop__item {
   text-align: center;
-  padding: 0 10px;
+  /* padding: 0 10px; */
 }
 
 .pop__img {
   margin-bottom: 20px;
-  width: 400px;
+  width: 300px;
   height: 266px;
   margin: 0 auto;
 }
@@ -1656,6 +1660,7 @@ body.ie ._ibg img {
   position: relative;
   z-index: 2;
   padding: 20px 0;
+  border-radius:8px;
 }
 
 .about__title {
@@ -1726,6 +1731,13 @@ body.ie ._ibg img {
       -ms-transform: translate(-70%, -50%);
           transform: translate(-70%, -50%);
   z-index: 1;
+  border-radius:50px;
+}
+
+
+
+.about__img img{
+  border-radius:4px;
 }
 
 .menu {
@@ -1750,6 +1762,7 @@ body.ie ._ibg img {
   display: block;
   position: relative;
   cursor: pointer;
+  /* border-radius:50px; */
 }
 
 .grid-menu__item:after {
@@ -2250,7 +2263,9 @@ body.ie ._ibg img {
     padding: 0 0 10px 0;
     margin-bottom: 40px;
   }
-
+  .popup__item:hover:before {
+    width: 100%;
+  }
   .popup__item:before {
     width: 100%;
   }
@@ -2415,7 +2430,9 @@ body.ie ._ibg img {
   }
 
   .pop__item {
+    overflow: hidden;
     border: 1px solid #cacaca;
+    border-radius:16px;
   }
 
   .title {
@@ -2790,12 +2807,14 @@ body.ie ._ibg img {
   }
 
   .popup__item {
-    display: block;
+    /* display: block; */
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
   }
 
   .item-popup__img {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
